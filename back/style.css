@@ -102,7 +102,7 @@
  .footer-icon-address{
     margin-right: 4px;
     font-size: 18px;
-    color: aqua;
+    /* color: aqua; */
 }
 
 .footer-color-h{
@@ -115,14 +115,35 @@
 
 
   
-  @media screen and (max-width: 992) and (min-width: 500px) {
+  @media screen and (max-width: 992px)  {
+    /* custom bootrap */
+    
+    /* .nav-link{
+        color: white;
+        margin: 10px 0;
+    
+    } */
+    /* .silde{
+        background-color: #a07936;
+        opacity: 0.8;
+        color: white;
+    } */
+    
+
+    .navbar{
+        --bs-navbar-active-color: white;
+    }
+    
+    
+    /*  */
+    .text{
+        color: white;
+        margin: 10px;
+    }
     .image{
         margin-left: 220px
     }
-    
-    .nav-link{
-        color: white;
-    }
+
     .footer-icon-address{
         margin-right: 4px;
         font-size: 18px;
