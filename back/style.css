@@ -1,0 +1,149 @@
+/* css boottrap */
+
+
+.navbar{
+    background-color: #fff !important;
+    --bs-navbar-padding-y: 0;
+}
+.nav{
+    --bs-nav-link-color: #424242
+}
+.nav-link {
+    margin: 0 10px;
+    padding: 0;
+}
+.btn{
+    --bs-btn-bg:#424242;
+    color:#fff
+}
+
+/* .navbar-nav{
+    background-color: aqua;
+} */
+
+/* css  */
+.bg{
+    background-color: #fff;
+    padding: 10px 0 ;
+    border-bottom: 1px solid #c4c4c4;
+}
+
+.silde{
+    background-color: #a07936;
+    opacity: 0.8;
+    color: white;
+}
+
+.bottom-nav{
+    padding-top: 15px;
+    padding-bottom: 10px;
+}
+
+.user-image{
+    margin: 0 5px;
+}
+
+.logo{
+    margin-top: 10px;
+}
+
+
+.button{
+    margin: 0 20px;
+    border-radius: 10px;
+   
+}
+
+
+
+
+
+
+ /* footer */
+
+ .top-footer{
+    padding: 15px 0;
+  
+    background-color: #f3f1f1;
+    
+ }
+ .top-footer-down{
+    border: 2px solid #daa937;
+    height: 150px;
+ }
+
+ .footer-hotline{
+    text-align: center;
+    font-size: 20px;
+    line-height: 29px;
+    color: #424242;
+    margin-top: 20px;
+    margin-bottom: 10px;
+ }
+ .footer-phone{
+    font-size: 52px;
+    line-height: 63px;
+    color: #DAC08C;
+    font-family: Prata, serif;
+    text-align: center;
+ }
+ .footer-bg{
+    border-top: 1px solid #c4c4c4;
+    background-color: #fff;
+ }
+ .footer-icon{
+    font-size: 25px;
+    border-radius: 5px;
+    color: aqua;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-right: 5px;
+ }
+ .footer-icon-address{
+    margin-right: 4px;
+    font-size: 18px;
+    color: aqua;
+}
+
+.footer-color-h{
+    color: #a07936;
+}
+ .textdecoration{
+    text-decoration: none;
+ }
+
+
+
+  
+  @media screen and (max-width: 992) and (min-width: 500px) {
+    .image{
+        margin-left: 220px
+    }
+    
+    .nav-link{
+        color: white;
+    }
+    .footer-icon-address{
+        margin-right: 4px;
+        font-size: 18px;
+        color: gray;
+    
+     }
+  }
+  @media screen and (min-width: 992px) {
+
+    .footer-icon-address{
+        margin-right: 4px;
+        font-size: 18px;
+        color: green;
+    
+     }
+     .image{
+        margin: 0 5px;
+    }
+     .top-nav{
+        padding-top: 5px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #c4c4c4;
+    }
+  }
