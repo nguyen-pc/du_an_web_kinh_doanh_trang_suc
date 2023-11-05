@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <link rel="stylesheet" href="../back/style.css">
+    <title>Document</title>
+</head>
+<body>
+  <!-- Header -->
+  <div class="bg">
+    <div class="container ">
+      <!-- Top header -->
+      <div class="top-nav">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+          <div class="container-fluid ">
+            <ul class="nav">
+              <li class="nav-item">
+              
+                <a class="nav-link active" aria-current="page" href="#">
+                  <img src="../assets/icon_header_left_list_1.webp"/>
+                  Về Cửa hàng
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="../assets/cuahang.webp"/>
+                  Cửa hàng
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">
+                  <img src="../assets/giavang.webp"/>
+                  Giá vàng
+                </a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link " aria-disabled="true">
+                  <img src="../assets/lienhe.webp" />
+                  Liên hệ
+                </a>
+              </li>   
+              <li class="nav-item">
+               
+                <a class="nav-link " aria-disabled="true">
+                  <i style="color: #adadad;" class="fa-regular fa-lightbulb"></i>
+                  Tin tức
+                </a>
+              </li>
+            </ul>
+          
+            <img style="width: 80px; height: 60px; " src="../assets/jstone-logo.jpg" />
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <a>
+              <img src="../assets/giohang.webp" />
+              Giỏ hàng
+            </a>
+            <a style="text-decoration: none; color: inherit;" href="./dangnhap.html">
+              <i class="fa-solid fa-user"></i>
+              Tài khoản
+            </a>
+                
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+          </div>
+        </nav> 
+      </div>
+        
+
+
+        <!-- down header -->
+        <div class="bottom-nav">
+          
+
+          <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+            
+              <div class=" offcanvas offcanvas-end silde" tabindex="-1" id="navbarNavProduct" aria-labelledby="offcanvasRightLabel">
+                <div class="navbar-nav">
+                  <a class="nav-link button1 text  " aria-current="page" href="#">TRANG SỨC NỮ</a>
+                  <a class="nav-link button1 button-color text " href="#">TRANG SỨC NAM</a>
+                  <a class="nav-link button1 text" href="#">NHẪN CƯỚI</a>
+                  <a class="nav-link button1 text" href="#">BẠC MỸ NGHỆ</a>
+                  <a class="nav-link button1 text" href="#">TRANG SỨC ĐÁ MÀU</a>
+                  
+                  <a class="nav-link button1 text" href="#">TRANG SỨC KIM CƯƠNG</a>
+                </div>
+              </div>
+              
+              <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button> -->
+            
+          </nav> 
+        </div>
+      </div>
+  </div>
+   
+  <!-- Main  -->
+  <div >
+
+      <div class="dn-top">
+        <div class="container " style="padding-top: 10px;"> 
+            <a class="dn-top-text">Trang chủ</a> <span style="color: #a07936;">/ Tài khoản</span>
+        </div>
+      </div>
+      <div class="container">
+        <div class="dn-title">ĐĂNG NHẬP</div>
+        
+        <div class="row">
+            <div class="col-lg-4"></div>
+            <div class="col-lg-4 ">
+                <div class="border-top"></div>
+                <input id="email_dn" class="form-control me-2" type="search" placeholder="Email" aria-label="Email">
+                <div style="display: flex;">
+                  <input id="matkhau_dn" style="margin-top: 10px;" class="form-control me-2" type="password" placeholder="Mật khẩu" aria-label="password">
+                  <i style="margin-top: 15px; margin-left: -30px;"  class="bi bi-eye-slash" id="togglePassword"></i>
+                  
+                </div>
+                <button id="btn_dn" class="dn-button" onclick="sendInformation()">Đăng nhập</button>
+                
+                <div class="dn-text"><a style="text-decoration: none; color: inherit;" href="./trangchu.html">Trở về</a></div>
+                <div class="dn-text"><a style="text-decoration: none; color: inherit;" href="./dangki.html">Đăng ký</a></div>
+                <div style="margin-bottom: 60px;" class="dn-text"><a style="cursor: pointer; text-decoration: none; color: inherit;">Quên mật khẩu?</a></div>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+       
+      </div>
+    
+  </div>
+
+  <!--  -->
+
+
+  <!-- footer -->
+ 
+  <footer class="footer-bg text-center text-lg-start">
+    <div class="top-footer">
+      <div class="top-footer-down">
+        <div class="footer-hotline">
+          Hotline của chúng tôi luôn chào đón quý khách
+        </div>
+        <div class="footer-phone">
+          <img src="../assets/icon_ft_contact_cus.webp"/>
+          1800 595 995
+        </div>
+      </div>
+     
+    </div>
+    <!-- Grid container -->
+    <div class="container p-4">
+      <div class="row">
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+        <img width="70px" height="70px" class="" src="../assets/header-img3.png" />
+  
+          <ul class="list-unstyled mt-2 mb-0">
+            <li>
+              <a href="#!" style="text-decoration: none;" class="text-dark">Our inn là một cửa hàng buôn bán đá quý uy tín, chất lượng hàng đầu tại Việt Nam</a>
+            </li>
+            <li class="flex mt-2">
+              <i class=" footer-icon fa-brands fa-google"></i>
+              <i class="footer-icon fa-brands fa-facebook"></i>
+              <i class="footer-icon fa-brands fa-twitter"></i>
+              <i class="footer-icon fa-brands fa-youtube"></i>
+            </li>
+
+          </ul>
+        </div>
+        <!--Grid column-->
+        <!--Grid column-->
+        <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+          <h5 class="footer-color-h text-uppercase">Địa chỉ</h5>
+  
+          <ul class="list-unstyled mt-3 mb-0">
+            <li class="flex mb-2">
+              <i class="footer-icon-address fa-solid fa-location-pin"></i>
+              <a href="#!" class="text-dark textdecoration"> Hung Vuong, Ninh Kieu, Can Tho</a>
+            </li>
+            <li class="flex mb-2">
+              <i class=" footer-icon-address fa-solid fa-phone"></i>
+              <a href="#!" class="text-dark textdecoration  ">18001048</a>
+            </li>
+            <li class="flex mb-2">
+              <i class="footer-icon-address fa-regular fa-envelope"></i>
+              <a href="#!" class="text-dark textdecoration  ">nguyenthcs430@gmail.com</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-color-h text-uppercase mb-0 textdecoration">Về OurInn</h5>
+  
+          <ul class="list-unstyled mt-3">
+            <li class="mb-2">
+              <a href="#!" class="text-dark textdecoration">Giới thiệu</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-dark textdecoration">Cửa hàng </a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-dark textdecoration">Liên hệ</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-dark textdecoration">Tuyển dụng</a>
+            </li>
+            <li class="mb-2">
+              <a href="#!" class="text-dark textdecoration">FAQs</a>
+            </li>
+          </ul>
+        </div>
+        <!--Grid column-->
+  
+        <!--Grid column-->
+        <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+          <h5 class="footer-color-h text-uppercase mb-0">ĐĂNG KÝ NHẬN THÔNG BÁO & KHUYẾN MẠI TỪ PHÚ QUÝ</h5>
+  
+          <p>Hãy trở thành người đầu tiên nắm được các thông tin cập nhật mới nhất từ Phú Quý về các mẫu thiết kế mới, những event đặc biệt, tin khuyến mại và các chương trình tặng quà... từ Phú Quý.</p>
+          
+              <div class="input-group">
+                <input type="text" style="margin-right: 10px;" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
+                <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
+                </span>
+              </div>
+        </div>
+        <!--Grid column-->
+      </div>
+      <!--Grid row-->
+    </div>
+    <!-- Grid container -->
+  
+    <!-- Copyright -->
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+      © 2023 Copyright:
+      <a class="text-dark" href="#">Our Inn</a>
+    </div>
+    <!-- Copyright -->
+  </footer>
+
+    <script src="../back/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html>
