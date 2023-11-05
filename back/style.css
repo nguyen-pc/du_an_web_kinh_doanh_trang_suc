@@ -356,20 +356,6 @@ html {}
     color: #daa937;
 }
 
-
-/* .card_background {
-    display: block;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-    cursor: pointer;
-    background-color: #00000080;
-} */
-
 .play .i {
     display: none;
 }
@@ -442,8 +428,19 @@ html {}
     .card:not(:first-child) {
         display: none;
     }
+    .img_wrapper_collection {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
     .button_product {
         padding: 10px 20px;
         font-size: 10px;
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .height {
+        height: 308px !important;
     }
 }
