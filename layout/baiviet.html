@@ -7,10 +7,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="icon" type="image/x-icon" href="../assets/logo3.ico">
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css" />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <link rel="stylesheet" href="../back/style.css">
-    <title>Đăng ký</title>
+    <title>Bài Viết</title>
 </head>
 
 <body>
@@ -64,8 +66,8 @@
                         </a>
 
                         <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-         </button>
+              <span class="navbar-toggler-icon"></span>
+           </button>
                     </div>
                 </nav>
             </div>
@@ -92,55 +94,141 @@
                     </div>
 
                     <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
-               <span class="navbar-toggler-icon"></span>
-            </button> -->
+                 <span class="navbar-toggler-icon"></span>
+              </button> -->
 
                 </nav>
             </div>
         </div>
     </div>
-
-    <!-- Main  -->
-    <div>
-
-        <div class="dn-top">
-            <div class="container " style="padding-top: 10px;">
-                <a class="dn-top-text">Trang chủ</a> <span style="color: #a07936;">/ Tài tài khoản</span>
-            </div>
-        </div>
-        <div class="container">
-            <div class="dn-title">TẠO TÀI KHOẢN</div>
-
-            <div class="row">
-                <div class="col-lg-4"></div>
-                <div class="col-lg-4 ">
-                    <div class="border-top"></div>
-                    <form id="form_signUp" method="post" action="./trangchu.html">
-
-                        <input id="dk_ten" class="form-control me-2" type="text" placeholder="Tên" aria-label="Ten">
-                        <input id="dk_ho" style="margin-top: 10px;" class="form-control me-2" type="text" placeholder="Họ" aria-label="ho">
-                        <input id="dk_email" style="margin-top: 10px;" class="form-control me-2" type="email" placeholder="Email" aria-label="Email">
-                        <div style="display: flex;">
-                            <input id="matkhau_dn" style="margin-top: 10px;" class="form-control me-2" type="password" placeholder="Mật khẩu" aria-label="password">
-                            <i style="margin-top: 15px; margin-left: -30px;" class="bi bi-eye-slash" id="togglePassword"></i>
-
-                        </div>
-                        <button onclick="sendInformationSignUp()" class="dn-button">Đăng Ký</button>
-                    </form>
-                    <div style="margin-bottom: 60px;" class="dn-text"><a style="color: inherit; text-decoration: none; cursor: pointer;" href="./trangchu.html">Trở về</a></div>
-                </div>
-                <div class="col-lg-4"></div>
-            </div>
-
-        </div>
-
-    </div>
-
     <!--  -->
+    <main class="cl2left main_bv">
+        <article class="item1 article_bv">
+            <h1>Ý NGHĨA VÀ CÔNG DỤNG TUYỆT VỜI CỦA ĐÁ THẠCH ANH TÍM</h1>
+            <div class="article_head">
+                <div class="article_date">
+                    <i class="fa-solid fa-calendar-days date"></i>
+                    <div>24/11/23</div>
+                </div>
+
+                <div class="article_comment">
+                    <i class="fa-regular fa-comment comment "></i>
+                    <div>0</div>
+                </div>
+
+                <div class="article_author">
+                    <i class="fa-solid fa-user"></i>
+                    <div>Nguyễn Chí Thiên</div>
+                </div>
+
+                <div class="social_network">
+                    <a href="#" class="like">
+                        <div class="like">
+                            <i class="fa-solid fa-thumbs-up"></i>
+                            <div>Thích</div>
+                        </div>
+                    </a>
+                    <a href="#" class="share">
+                        <div class="share">
+                            <i class="fa-solid fa-share"></i>
+                            <div>Chia Sẻ</div>
+                        </div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="brief_description">
+                <p>Thạch anh tím trong lịch sử từng là loại đá quý có giá trị cao đắt ngang với kim cương, ruby, sapphire hay ngọc lục bảo</p>
+            </div>
+
+            <div class="article_content">
+                <div class="article_content1">
+                    <div>
+                        <h2>Amethyst là gì?</h2>
+                        <div class="article_content2">
+                            <p>Tên gọi "Amethyst" xuất phát từ tiếng Hy Lạp “amethystos” có nghĩa là "không say". Người Hy Lạp cho rằng thạch anh tím có khả năng trung hòa với rượu, hóa giải giúp chủ nhân thoát khỏi những cơn say rượu đồng thời ngăn ngừa
+                                nhiễm độc và tăng cường sức khỏe.</p>
+                            <p>Trong thời cổ đại, cũng như trong thời Trung cổ, mọi người tin rằng hình thái của vũ trụ được phản ánh trong tưng viên đá quý.Thạch anh tím được xem là biểu tượng cho hành tinh Neptune kết nối với Thượng Đế. Chính vì vậy mà
+                                Amethyst có chiều dài lịch sử gắn liền vơí nhiều nền tôn giáo.</p>
+                        </div>
+                    </div>
+                    <img src="../assets/baiviet/anh1.jpg" alt="">
+                </div>
+
+                <div class="article_content1">
+                    <img src="../assets/baiviet/anh2.jpg" alt="">
+                    <div>
+                        <h2>Tác dụng về sức khỏe và phong thủy của thạch anh tím</h2>
+                        <div class="article_content2">
+                            <p>Thạch anh tím trong lịch sử từng là loại đá quý có giá trị cao đắt ngang với kim cương, ruby, sapphire hay ngọc lục bảo. Vào thế kỉ 19, khi mà những mỏ khai thác lớn bùng phát ở Brazil thì giá trị của thạch anh tím không vì
+                                thế mà suy giảm đi. </p>
+                            <p>Tương truyền những viên đá thạch anh có màu tím này phát ra nguồn năng lượng mạnh mẽ kết nối với tâm linh hướng đến quyền năng của vũ trụ. Giúp bảo vệ chống lại thế lực xấu xa cũng như mang lại bình an, thành công và may mắn
+                                cho chủ nhân.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="article_content1">
+                    <div>
+                        <h2>Thạch anh tím là biểu tượng của tình yêu</h2>
+                        <div class="article_content2">
+                            <p>Ở phương Tây, nó được gọi là “Đá bảo hộ tình yêu”. Thạch anh tím có thể trao cho các cặp vợ chồng, những đôi yêu nhau lòng can đảm, sự trung thực và sự sâu sắc trong tình yêu. Nhiều cặp vợ chồng không hòa thuận vì bất hòa trong
+                                tình dục, thạch anh tím cũng có năng lượng bí ẩn của “sức sống tình dục“, biến những năng lượng tình yêu thành năng lượng tinh thần, giúp các cặp đôi thăng hoa trong đời sống.</p>
+                        </div>
+                    </div>
+                    <img src="../assets/baiviet/anh3.jpg" alt="">
+                </div>
+
+                <div class="article_content1">
+                    <img src="../assets/baiviet/anh4.jpg" alt="">
+                    <div>
+                        <h2>Thạch anh tím và luân xa số 6</h2>
+                        <div class="article_content2">
+                            <p>Thạch anh tím chứa năng lượng cao và tương ứng luân xa số 6 ở mi tâm (giữa 2 chân mày, con mắt thứ 3) trong hệ thống luân xa. Do đó, nó có thể thúc đẩy hoạt động của các tế bào não, làm bộ não nhanh nhạy hơn, do đó phát triển
+                                trí thông minh, giúp suy nghĩ, tập trung và tăng cường trí nhớ. Đối với những người liên tục vận động não, chẳng hạn như sinh viên, nhân viên văn phòng, doanh nhân,… họ rất phù hợp để đeo vòng tay thạch anh tím.</p>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+            <!-- Binhluan -->
+            <form class="form_comment" method="get">
+                <img src="../assets/baiviet/avatar.jpg" alt="" class="avatar">
+                <textarea name="comment" id="" cols="30" rows="10" placeholder="Viết bình luận..." maxlength="200"></textarea>
+                <button>Đăng</button>
+            </form>
+        </article>
+
+        <aside class="item3">
+            <div>
+                <a href="#" class="list_news">
+                    <div class="list_news">DANH MỤC TIN TỨC</div>
+                </a>
+                <div class="news">
+                    <a href="#"><img src="../assets/baiviet/anh4.jpeg" alt=""></a>
+                    <a href="#">
+                        <p>TOP 10 TRANG SỨC CỔ ĐIỂN TRÊN THẾ GIỚI</p>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="#"><img src="../assets/baiviet/anh5.jpg" alt=""></a>
+                    <a href="#">
+                        <p>CÁC KIỂU TRANG SỨC KHÔNG BAO GIỜ LỖI MỐT</p>
+                    </a>
+                </div>
+                <div class="news">
+                    <a href="#"><img src="../assets/baiviet/ANH6.jpeg" alt=""></a>
+                    <a href="#">
+                        <p>GỢI Ý KIỂU TRANG SỨC CHO 12 CUNG HOÀNG ĐẠO</p>
+                    </a>
+                </div>
+            </div>
+        </aside>
+    </main>
 
 
     <!-- footer -->
-
     <footer class="footer-bg text-center text-lg-start">
         <div class="top-footer">
             <div class="top-footer-down">
@@ -228,7 +316,7 @@
                     <div class="input-group">
                         <input type="text" style="margin-right: 10px;" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
                         <span class="input-group-btn">
-                <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
                         </span>
                     </div>
                 </div>
@@ -246,8 +334,11 @@
         <!-- Copyright -->
     </footer>
 
-    <script src="../back/index.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../back/index.js"></script>
+
 </body>
 
 </html>

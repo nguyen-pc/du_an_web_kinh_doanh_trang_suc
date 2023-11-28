@@ -1,0 +1,7 @@
++Tên đề tài: Website công ty kinh doanh trang sức
++Phân công thực hiện
+  1. Nguyễn Hoàng Thanh Nguyên - Trang chủ, Trang đăng nhập, Trang đăng kí
+  2. Nguyễn Chí Thiên - Trang bài viết, Trang giới thiệu
+  3. Nguyễn Phát Đạt - Trang giỏ hàng, Trang sản phẩm, hiển thị giỏ hàng
+  4. Châu Quốc Pháp - Trang tin tức, Trang liên hệ
+  5. Hồ Nhật Minh - Trang giá vàng, Trang khuyến mãi 

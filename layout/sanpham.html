@@ -2,16 +2,16 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
     />
     <link rel="icon" type="image/x-icon" href="../assets/logo3.ico">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <link rel="stylesheet" href="../back/style.css">
-    <title>Document</title>
+    <link rel="stylesheet" href="../back/style.css" />
+    <title>Sản phẩm</title>
 </head>
 
 <body>
@@ -25,40 +25,40 @@
                         <ul class="nav">
                             <li class="nav-item">
 
-                                <a class="nav-link active" aria-current="page" href="#">
-                                    <img src="../assets/icon_header_left_list_1.webp" /> Về Gloden Star
+                                <a class="nav-link active" aria-current="page" href="./gioithieu.html">
+                                    <img src="../assets/icon/icon_header_left_list_1.webp" /> Về Gloden Star
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="../assets/cuahang.webp" /> Cửa hàng
+                                <a class="nav-link" href="./gioithieu.html">
+                                    <img src="../assets/icon/cuahang.webp" /> Cửa hàng
                                 </a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">
-                                    <img src="../assets/giavang.webp" /> Giá vàng
+                                <a class="nav-link" href="./giavang.html">
+                                    <img src="../assets/icon/giavang.webp" /> Giá vàng
                                 </a>
                             </li>
-                            <li style="cursor: pointer;" class="nav-item" href="#">
-                                <a class="nav-link ">
-                                    <img src="../assets/lienhe.webp" /> Liên hệ
+                            <li style="cursor: pointer;" class="nav-item">
+                                <a class="nav-link " href="./lienhe.html">
+                                    <img src="../assets/icon/lienhe.webp" /> Liên hệ
                                 </a>
                             </li>
-                            <li class="nav-item" href="#">
+                            <li class="nav-item">
 
-                                <a style="cursor: pointer;" class="nav-link ">
+                                <a style="cursor: pointer;" class="nav-link" href="./tintuc.html">
                                     <i style="color: #adadad;" class="fa-regular fa-lightbulb"></i> Tin tức
                                 </a>
                             </li>
                         </ul>
 
-                        <img style="width: 150px; height: 70px; border-radius: 50%; " src="../assets/logo3.png  " />
+                        <a href="./trangchu.html"> <img style="width: 150px; height: 70px; border-radius: 50%; " src="../assets/icon/logo3.png  " /></a>
                         <form class="d-flex" role="search">
                             <input id="Search" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
-                            <button id="btn_search" class="btn btn-outline-success" type="submit">Search</button>
+                            <button id="btn_search" class="btn btn-outline-success" type="submit" onclick="sendSearch()">Search</button>
                         </form>
-                        <a id="cart" class="hover1" style="cursor: pointer; color: inherit; text-decoration: none;">
-                            <img src="../assets/giohang.webp" /> Giỏ hàng
+                        <a id="cart" class="hover1" style="cursor: pointer; color: inherit; text-decoration: none;" href="./giohang.html">
+                            <img src="../assets/icon/giohang.webp" /> Giỏ hàng
                         </a>
                         <a class="hover1" style="color: inherit; text-decoration: none;" href="./dangnhap.html">
                             <i class="fa-solid fa-user"></i> Tài khoản
@@ -81,14 +81,14 @@
 
                     <div class=" offcanvas offcanvas-end silde" tabindex="-1" id="navbarNavProduct" aria-labelledby="offcanvasRightLabel">
                         <div class="navbar-nav">
-                            <a class="nav-link button1 text  " aria-current="page" href="#">TRANG SỨC NỮ</a>
-                            <a class="nav-link button1 button-color text " href="#">TRANG SỨC NAM</a>
-                            <a class="nav-link button1 text" href="#">NHẪN CƯỚI</a>
-                            <a class="nav-link button1 text" href="#">BẠC MỸ NGHỆ</a>
-                            <a class="nav-link button1 text" href="#">TRANG SỨC ĐÁ MÀU</a>
+                            <a class="nav-link button1 text  " aria-current="page" href="./sanpham.html">TRANG SỨC NỮ</a>
+                            <a class="nav-link button1 button-color text " href="./sanpham.html">TRANG SỨC NAM</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">NHẪN CƯỚI</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">BẠC MỸ NGHỆ</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC ĐÁ MÀU</a>
 
-                            <a class="nav-link button1 text" href="#">TRANG SỨC KIM CƯƠNG</a>
-                            <a style="color: #010101 !important; border-bottom: 1px solid #daa937;" class="nav-link button1 text" href="#">KHUYẾN MÃI</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC KIM CƯƠNG</a>
+                            <a style="color: #010101 !important; border-bottom: 1px solid #daa937;" class="nav-link button1 text" href="./khuyenmai.html">KHUYẾN MÃI</a>
                         </div>
                     </div>
 
@@ -102,8 +102,114 @@
     </div>
     <!--  -->
     <main>
-        <!--code here  -->
-        <h1>Hello</h1>
+        <h2 class="headeing">Sản phẩm</h2>
+        <div id="products-display">
+            <div class="product">
+                <img src="../assets/sanpham/sp1.jpg" alt="" />
+                <h5 class="product-name">Nhẫn bạc</h5>
+                <p class="product-title">Gu đơn giản</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp01" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp01')">Thêm</button>
+                </div>
+                <div class="price-product">10000VNĐ</div>
+                <div class="best-saler-product">Best saler</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp2.jpg" alt="" />
+                <h5 class="product-name">Nhẫn kim cương</h5>
+                <p class="product-title">Đẳng cấp, quyền lực</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp02" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp02')">Thêm</button>
+                </div>
+                <div class="price-product">20000VNĐ</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp3.jpg" alt="" />
+                <h5 class="product-name">Dây chuyền tím</h5>
+                <p class="product-title">Ôi những đồi hoa sim</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp03" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp03')">Thêm</button>
+                </div>
+                <div class="price-product">30000VNĐ</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp4.jpg" alt="" />
+                <h5 class="product-name">Dây chuyền Đại dương</h5>
+                <p class="product-title">Biển sâu chúc phúc</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp04" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp04')">Thêm</button>
+                </div>
+                <div class="price-product">40000VNĐ</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp5.jpg" alt="" />
+                <h5 class="product-name">Lắc tay nâu đỏ</h5>
+                <p class="product-title">Màu của nâu đỏ</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp05" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp05')">Thêm</button>
+                </div>
+                <div class="price-product">50000VNĐ</div>
+
+                <div class="best-saler-product">Best saler</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp6.jpg" alt="" />
+                <h5 class="product-name">Lắc tay thần kỳ</h5>
+                <p class="product-title">Đơn giản, thanh nhã</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp06" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp06')">Thêm</button>
+                </div>
+                <div class="price-product">60000VNĐ</div>
+
+                <div class="best-saler-product">Best saler</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp7.jpg" alt="" />
+                <h5 class="product-name">Nhẫn Supper Start</h5>
+                <p class="product-title">Hào quang rực rỡ</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp07" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp07')">Thêm</button>
+                </div>
+                <div class="price-product">70000VNĐ</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp8.jpg" alt="" />
+                <h5 class="product-name">Nhẫn cưới Ngày xuân</h5>
+                <p class="product-title">Quyền lực, đẳng cấp</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp08" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp08')">Thêm</button>
+                </div>
+                <div class="price-product">80000VNĐ</div>
+                <div class="best-saler-product">Best saler</div>
+            </div>
+            <div class="product">
+                <img src="../assets/sanpham/sp9.jpg" alt="" />
+                <h5 class="product-name">Nhẫn Hoa hậu</h5>
+                <p class="product-title">Vương miệng phiên bản nhỏ</p>
+                <a href="">Xem chi tiết sản phẩm</a>
+                <div class="buy-product">
+                    <input id="sp09" type="number" min="0" max="20" value="0" size="3" />
+                    <button onclick="addCart('sp09')">Thêm</button>
+                </div>
+                <div class="price-product">90000VNĐ</div>
+            </div>
+        </div>
     </main>
 
     <!-- footer -->
@@ -114,7 +220,7 @@
                     Hotline của chúng tôi luôn chào đón quý khách
                 </div>
                 <div class="footer-phone">
-                    <img src="../assets/icon_ft_contact_cus.webp" /> 1800 595 995
+                    <img src="../assets/icon/icon_ft_contact_cus.webp" /> 1800 595 995
                 </div>
             </div>
 
@@ -124,7 +230,7 @@
             <div class="row">
                 <!--Grid column-->
                 <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
-                    <img width="100px" height="70px" class="" src="../assets/logo3.png" />
+                    <img width="100px" height="70px" class="" src="../assets/icon/logo3.png" />
 
                     <ul class="list-unstyled mt-2 mb-0">
                         <li>
@@ -212,11 +318,9 @@
         <!-- Copyright -->
     </footer>
 
-
     <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="../back/index.js"></script>
-
 </body>
 
 </html>

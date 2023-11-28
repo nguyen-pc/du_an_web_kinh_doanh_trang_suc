@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/logo3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../back/style.css">
+    <title>Tin tức</title>
+</head>
+
+<body class="body">
+    <!-- Header -->
+    <div class="bg">
+        <div class="container ">
+            <!-- Top header -->
+            <div class="top-nav">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+                    <div class="container-fluid ">
+                        <ul class="nav">
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="./gioithieu.html">
+                                    <img src="../assets/icon/icon_header_left_list_1.webp" /> Về Gloden Star
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gioithieu.html">
+                                    <img src="../assets/icon/cuahang.webp" /> Cửa hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./giavang.html">
+                                    <img src="../assets/icon/giavang.webp" /> Giá vàng
+                                </a>
+                            </li>
+                            <li style="cursor: pointer;" class="nav-item">
+                                <a class="nav-link " href="./lienhe.html">
+                                    <img src="../assets/icon/lienhe.webp" /> Liên hệ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a style="cursor: pointer;" class="nav-link" href="./tintuc.html">
+                                    <i style="color: #adadad;" class="fa-regular fa-lightbulb"></i> Tin tức
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="./trangchu.html"> <img style="width: 150px; height: 70px; border-radius: 50%; " src="../assets/icon/logo3.png  " /></a>
+                        <form class="d-flex" role="search">
+                            <input id="Search" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                            <button id="btn_search" class="btn btn-outline-success" type="submit" onclick="sendSearch()">Search</button>
+                        </form>
+                        <a id="cart" class="hover1" style="cursor: pointer; color: inherit; text-decoration: none;" href="./giohang.html">
+                            <img src="../assets/icon/giohang.webp" /> Giỏ hàng
+                        </a>
+                        <a class="hover1" style="color: inherit; text-decoration: none;" href="./dangnhap.html">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+                    </div>
+                </nav>
+            </div>
+
+
+
+            <!-- down header -->
+            <div class="bottom-nav">
+
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+
+                    <div class=" offcanvas offcanvas-end silde" tabindex="-1" id="navbarNavProduct" aria-labelledby="offcanvasRightLabel">
+                        <div class="navbar-nav">
+                            <a class="nav-link button1 text  " aria-current="page" href="./sanpham.html">TRANG SỨC NỮ</a>
+                            <a class="nav-link button1 button-color text " href="./sanpham.html">TRANG SỨC NAM</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">NHẪN CƯỚI</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">BẠC MỸ NGHỆ</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC ĐÁ MÀU</a>
+
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC KIM CƯƠNG</a>
+                            <a style="color: #010101 !important; border-bottom: 1px solid #daa937;" class="nav-link button1 text" href="./khuyenmai.html">KHUYẾN MÃI</a>
+                        </div>
+                    </div>
+
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button> -->
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!-- Main  -->
+
+
+    <!-- ==================================================================================================================================================================-->
+    </div>
+    <div class=" lh-top">
+        <div class="container-lh" style="padding-top:10px"></div>
+        <a style="margin-left: 15px;" class="dn-top-text">Trang chủ</a>
+        <span style=" color:#a07936">/Tất cả bài viết</span>
+    </div>
+    <div style="margin-top: 20px; margin-bottom: 20px;" class="container">
+        <div class="grid">
+            <h1>Tất cả bài viết</h1>
+        </div>
+
+    </div>
+    <hr>
+    <div class=" container">
+        <div class="body-tintuc">
+            <div class="body-title">
+                <h3 class="h3">Bảo quản trang sức với những mẹo hữu ích sau</h3>
+
+                <br>
+                <!-- class="d-block w-100" -->
+                <div id="carouselExampleIndicators1" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://file.hstatic.net/200000061680/article/elle-viet-nam-bao-quan-trang-suc-4_eb89f8cac113441ab1866a781fa5171c_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/article/scott-webb-_7g_r_iwt1u-unsplash_cb02cc47fcf34993a928c5a7e92a477b_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/file/elle-viet-nam-bao-quan-trang-suc-5_4ce479c53ae64c9381aac09019fc6fc9_grande.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="prev">
+                      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators1" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!-- class="d-block w-100" -->
+                <div class="title">
+                    <p class="p">Trang sức được coi là món đồ quý giá trong tủ đồ thời trang của phái đẹp. Đối với đấng mày râu thì một chiếc nhẫn nam lại là món phụ kiện thể hiện đẳng cấp. Sở hữu những món trang sức quý giá này, chủ nhân đừng bỏ lỡ những mẹo sử dụng
+                        và bảo quản, vệ sinh trang sức luôn sáng đẹp, mới lạ.</p>
+                    <a href="./baiviet.html" class="button_product">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="body-title">
+                <h3 class="h3">Đừng bỏ qua những mẫu trang sức này nếu bạn "say mê" phong cách tối giản</h3>
+
+                <!-- class="d-block w-100" -->
+                <div id="carouselExampleIndicators2" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://file.hstatic.net/200000061680/article/54210569_2199357553505369_7484084245217844084_n_80078efbd44842bdaa8f6fcb68c0d7a3_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/article/54210569_2199357553505369_7484084245217844084_n_80078efbd44842bdaa8f6fcb68c0d7a3_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/file/121256415_561035297992818_2558747479351544527_n_e7c7a73a6e1e438b9fbdf08cfadb4c3d_grande.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="prev">
+                                          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Previous</span>
+                                        </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators2" data-bs-slide="next">
+                                          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                          <span class="visually-hidden">Next</span>
+                                        </button>
+                </div>
+                <!--class="d-block w-100"  -->
+                <div class="title">
+                    <p class="p">Phong cách tối giản – Minimalism được nhiều tín đồ thời trang ưa chuộng bởi sự thời thượng cũng như tính ứng dụng cao của nó. Trở thành một Minimalist, bạn có thể đến bất cứ đâu bạn muốn với trang phục, phụ kiện thời trang giản đơn
+                        nhất, bởi lẽ minimalism đáp ứng được mọi nhu cầu của người mặc: thoải mái, thời trang, đơn giản nhưng cũng đầy sang trọng.</p>
+                    <a href="./baiviet.html" class="button_product">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="body-title">
+                <h3 class="h3">4 kiểu trang sức không bao giờ lôĩ thời</h3>
+
+                <!--class="d-block w-100"  -->
+                <div id="carouselExampleIndicators3" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://file.hstatic.net/200000061680/article/121108066_778070139701567_9011066722522887415_n_2b3a37070a85403a81922c3a3cf455b2_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/article/121108066_778070139701567_9011066722522887415_n_2b3a37070a85403a81922c3a3cf455b2_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/article/121108066_778070139701567_9011066722522887415_n_2b3a37070a85403a81922c3a3cf455b2_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="prev">
+                       <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                       <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators3" data-bs-slide="next">
+                       <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                      <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--class="d-block w-100"  -->
+
+                <div class="title">
+                    <p class="p">Mỗi một giai đoạn, năm tháng khác nhau con gái thường sẽ có sự thay đổi trong suy nghĩ. Nếu như khi 20, cô gái trẻ nào cũng thích nổi bật, đặc biệt họ thường chạy theo những xu hướng thiết kế độc, lạ và nhanh hết “mốt” sau một mùa,
+                        một năm. Nhưng theo năm tháng, đa phần các quý cô sẽ để mắt tới những mẫu trang sức có giá trị sử dụng cao, không lo “lỗi mốt” để theo họ đi suốt chặng đường sau này.</p>
+                    <a href="./baiviet.html" class="button_product">Xem chi tiết</a>
+                </div>
+            </div>
+            <div class="body-title">
+                <h3 class="h3">Kim cương là gì? Những bí quyết lựa chon trang sức kim cương không thể bỏ qua.</h3>
+                <!-- <img src="https://file.hstatic.net/200000061680/article/sabrinna-ringquist-lqfqsij4evq-unsplash_58cf43e155264672b5ff5333d61f450a_large.jpg" height="300px" width="500px">
+                <img src="https://file.hstatic.net/200000061680/file/edgar-soto-gb0bzgae1nk-unsplash_ba3ca071f86245479469397e2c73f525_grande.jpg" height="300px" width="500px"> -->
+                <!--  -->
+                <div id="carouselExampleIndicators4" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="1" aria-label="Slide 2"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide-to="2" aria-label="Slide 3"></button>
+                    </div>
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <img src="https://file.hstatic.net/200000061680/article/elle-viet-nam-bao-quan-trang-suc-4_eb89f8cac113441ab1866a781fa5171c_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/article/scott-webb-_7g_r_iwt1u-unsplash_cb02cc47fcf34993a928c5a7e92a477b_large.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                        <div class="carousel-item">
+                            <img src="https://file.hstatic.net/200000061680/file/elle-viet-nam-bao-quan-trang-suc-5_4ce479c53ae64c9381aac09019fc6fc9_grande.jpg" height="300px" width="700px" alt="...">
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                          <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators4" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                         <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+                <!--  -->
+                <div class="title">
+                    <p class="p">Kim cương là chất liệu phổ biến trong chế tạo trang sức và đồng hồ đeo tay. Được mệnh danh là "vua của đá quý", kim cương mang trong mình vẻ đẹp vượt thời gian cùng giá trị kinh tế cao. Vậy kim cương là gì? Làm thế nào để lựa chọn
+                        món trang sức kim cương phù hợp nhất? Hãy cùng tìm hiểu trong bài viết dưới đây nhé.</p>
+                    <a href="./baiviet.html" class="button_product">Xem chi tiết</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    </div>
+    </div>
+    </div>
+    </div>
+
+    <!-- footer -->
+    <!--=====================================================================================================================================================-->
+    <footer class="footer-bg text-center text-lg-start">
+        <div class="top-footer">
+            <div class="top-footer-down">
+                <div class="footer-hotline">
+                    Hotline của chúng tôi luôn chào đón quý khách
+                </div>
+                <div class="footer-phone">
+                    <img src="../assets/icon/icon_ft_contact_cus.webp" /> 1800 595 995
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <img width="100px" height="70px" class="" src="../assets/icon/logo3.png" />
+
+                    <ul class="list-unstyled mt-2 mb-0">
+                        <li>
+                            <a href="#!" style="text-decoration: none;" class="text-dark">Gloden Star là một cửa hàng buôn bán đá quý uy tín, chất lượng hàng đầu tại Việt Nam</a>
+                        </li>
+                        <li class="flex mt-2">
+                            <i style="cursor: pointer;" class=" footer-icon fa-brands fa-google"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-facebook"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-twitter"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-youtube"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <h5 class="footer-color-h text-uppercase">Địa chỉ</h5>
+
+                    <ul class="list-unstyled mt-3 mb-0">
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-solid fa-location-pin"></i>
+                            <a href="#!" class="text-dark textdecoration"> Hung Vuong, Ninh Kieu, Can Tho</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class=" footer-icon-address fa-solid fa-phone"></i>
+                            <a href="#!" class="text-dark textdecoration  ">18001048</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-regular fa-envelope"></i>
+                            <a href="#!" class="text-dark textdecoration  ">goldenstar@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0 textdecoration">Về Golden Star</h5>
+
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Giới thiệu</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Cửa hàng </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Liên hệ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Tuyển dụng</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0">ĐĂNG KÝ NHẬN THÔNG BÁO & KHUYẾN MẠI TỪ Golden Star</h5>
+
+                    <p>Hãy trở thành người đầu tiên nắm được các thông tin cập nhật mới nhất từ Golden Star về các mẫu thiết kế mới, những event đặc biệt, tin khuyến mại và các chương trình tặng quà... từ Golden Star.</p>
+
+                    <div class="input-group">
+                        <input type="text" style="margin-right: 10px;" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
+                        </span>
+                    </div>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">Golden Star</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../back/index.js"></script>
+
+</body>
+
+</html>
