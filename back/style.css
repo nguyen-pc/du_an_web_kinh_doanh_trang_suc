@@ -389,50 +389,6 @@
 /* Đạt */
 
 
-/* Đáp ứng- bắt đầu */
-
-
-/* Tablet */
-
-@media (min-width: 567px) and (max-width: 1024px) {
-    .product {
-        width: 45% !important;
-    }
-    .product img {
-        height: 240px !important;
-    }
-    #product-cart img {
-        width: 120px !important;
-    }
-    #product-cart tfoot button {
-        width: 100px !important;
-        height: 40px !important;
-    }
-}
-
-
-/* Mobile */
-
-@media (max-width: 567px) {
-    .product {
-        width: 90% !important;
-    }
-    .product img {
-        height: 180px !important;
-    }
-    #product-cart img {
-        width: 80px !important;
-    }
-    #product-cart tfoot button {
-        width: 100px !important;
-        height: 30px !important;
-    }
-}
-
-
-/* Đáp ứng- hết */
-
-
 /* Trang Sản phẩm- Đạt */
 
 #products-display {
@@ -848,7 +804,7 @@ div {
 }
 
 
-/*TRANG BÀI VIẾT-THIÊN */
+/*TRANG BÀI VIẾT - THIÊN */
 
 .article_head {
     display: flex;
@@ -1039,4 +995,89 @@ div {
     color: white;
     background-color: cornflowerblue;
     border-radius: 5px;
+}
+
+
+/* Thiết kế đáp ứng 
+
+
+/* Tablet */
+
+@media (min-width: 567px) and (max-width: 1024px) {
+    /* Sản phẩm - Đạt */
+    .product {
+        width: 45% !important;
+    }
+    .product img {
+        height: 240px !important;
+    }
+    #product-cart img {
+        width: 120px !important;
+    }
+    #product-cart tfoot button {
+        width: 100px !important;
+        height: 40px !important;
+    }
+    /* Bài viết và giới thiêu - Thiên */
+    .article_content1 {
+        display: block;
+    }
+    aside {
+        display: none;
+    }
+    .social_network {
+        left: 20px;
+    }
+    .article_content1 img {
+        width: 300px;
+        height: 300px;
+    }
+}
+
+
+/* Mobile */
+
+@media (max-width: 567px) {
+    /* Sản phẩm - Đạt */
+    .product {
+        width: 90% !important;
+    }
+    .product img {
+        height: 180px !important;
+    }
+    #product-cart img {
+        width: 80px !important;
+    }
+    #product-cart tfoot button {
+        width: 100px !important;
+        height: 30px !important;
+    }
+    /* Bài viết và giới thiêu - Thiên */
+    .main_bv {
+        margin-left: 0px;
+    }
+    .article_content1 {
+        display: block;
+    }
+    .article_head {
+        flex-wrap: wrap;
+    }
+    .social_network {
+        position: relative;
+        top: 10px;
+        left: -30px;
+    }
+    .brief_description {
+        width: 90%;
+    }
+    aside {
+        display: none;
+    }
+    .article_content1 img {
+        width: 200px;
+        height: 200px;
+    }
+    .main_bv {
+        font-size: smaller;
+    }
 }

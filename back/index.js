@@ -269,5 +269,3 @@ var showCart = function () {
     tdD.innerHTML = `Tổng cộng (D) = A+B+C = <span>${finalTotal} VNĐ</span>`;
   }
 };
-
-// Hiển thị giỏ hàng Nguyên đã dùng thẻ a rồi
