@@ -1,7 +1,5 @@
 /*  */
 
-html {}
-
 
 /* css boottrap */
 
@@ -44,9 +42,19 @@ html {}
     text-align: center;
     color: #010101;
     font-size: 35px;
+    font-weight: 600;
     padding-bottom: 55px;
     line-height: 37px;
 }
+
+.headeing {
+    text-align: center;
+    margin: 8px 0;
+    color: #010101;
+}
+
+
+/* css (navbar and footer) - Nguyên*/
 
 
 /* css  navbar */
@@ -80,9 +88,6 @@ html {}
     margin: 0 20px;
     border-radius: 10px;
 }
-
-
-/* css Trang chủ */
 
 
 /* footer */
@@ -188,10 +193,8 @@ html {}
     }
 }
 
-@media screen and (min-width:576px) {}
 
-
-/* Dang nhap */
+/* Dang nhap - Nguyên */
 
 .dn-top {
     height: 50px;
@@ -201,6 +204,7 @@ html {}
 
 .dn-top-text {
     margin-top: 10px;
+    margin-left: 10px;
     text-decoration: none;
     color: #010101;
     cursor: pointer;
@@ -208,7 +212,8 @@ html {}
 
 .dn-title {
     text-align: center;
-    font-size: 25px;
+    font-size: 35px;
+    font-weight: 600;
     color: #010101;
     padding: 0px 0px 15px 0px;
     margin: 50px 0px 15px 0px;
@@ -239,7 +244,7 @@ html {}
 }
 
 
-/* trang chu */
+/* Trang chủ - Nguyên*/
 
 .img_product {
     width: 100%;
@@ -426,12 +431,6 @@ html {}
 
 
 /* Đáp ứng- hết */
-
-.headeing {
-    text-align: center;
-    margin: 8px 0;
-    color: #a07936;
-}
 
 
 /* Trang Sản phẩm- Đạt */
