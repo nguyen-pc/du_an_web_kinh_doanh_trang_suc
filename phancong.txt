@@ -1,0 +1,7 @@
++Tên đề tài: Website công ty kinh doanh trang sức
++Phân công thực hiện:
+  1. Nguyễn Hoàng Thanh Nguyên - B2203516 - Trang chủ, Trang đăng nhập, Trang đăng kí
+  2. Nguyễn Chí Thiên - B2203530 - Trang bài viết (Nhấn vào xem chi tiết bên trang tin tức), Trang giới thiệu
+  3. Nguyễn Phát Đạt - B2203498 - Trang giỏ hàng, Trang sản phẩm, hiển thị giỏ hàng
+  4. Châu Quốc Pháp - B2203521 - Trang tin tức, Trang liên hệ
+  5. Hồ Nhựt Minh - B1906715 - Trang giá vàng, Trang khuyến mãi 

@@ -1,0 +1,278 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/logo3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="../back/style.css">
+    <title>Giới Thiệu</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="bg">
+        <div class="container ">
+            <!-- Top header -->
+            <div class="top-nav">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+                    <div class="container-fluid ">
+                        <ul class="nav">
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="./gioithieu.html">
+                                    <img src="../assets/icon/icon_header_left_list_1.webp" /> Về Gloden Star
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gioithieu.html">
+                                    <img src="../assets/icon/cuahang.webp" /> Cửa hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./giavang.html">
+                                    <img src="../assets/icon/giavang.webp" /> Giá vàng
+                                </a>
+                            </li>
+                            <li style="cursor: pointer;" class="nav-item">
+                                <a class="nav-link " href="./lienhe.html">
+                                    <img src="../assets/icon/lienhe.webp" /> Liên hệ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a style="cursor: pointer;" class="nav-link" href="./tintuc.html">
+                                    <i style="color: #adadad;" class="fa-regular fa-lightbulb"></i> Tin tức
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="./trangchu.html"> <img style="width: 150px; height: 70px; border-radius: 50%; " src="../assets/icon/logo3.png  " /></a>
+                        <form class="d-flex" role="search">
+                            <input id="Search" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                            <button id="btn_search" class="btn btn-outline-success" type="submit" onclick="sendSearch()">Search</button>
+                        </form>
+                        <a id="cart" class="hover1" style="cursor: pointer; color: inherit; text-decoration: none;" href="./giohang.html">
+                            <img src="../assets/icon/giohang.webp" /> Giỏ hàng
+                        </a>
+                        <a class="hover1" style="color: inherit; text-decoration: none;" href="./dangnhap.html">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+                    </div>
+                </nav>
+            </div>
+
+
+
+            <!-- down header -->
+            <div class="bottom-nav">
+
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+
+                    <div class=" offcanvas offcanvas-end silde" tabindex="-1" id="navbarNavProduct" aria-labelledby="offcanvasRightLabel">
+                        <div class="navbar-nav">
+                            <a class="nav-link button1 text  " aria-current="page" href="./sanpham.html">TRANG SỨC NỮ</a>
+                            <a class="nav-link button1 button-color text " href="./sanpham.html">TRANG SỨC NAM</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">NHẪN CƯỚI</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">BẠC MỸ NGHỆ</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC ĐÁ MÀU</a>
+
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC KIM CƯƠNG</a>
+                            <a style="color: #010101 !important; border-bottom: 1px solid #daa937;" class="nav-link button1 text" href="./khuyenmai.html">KHUYẾN MÃI</a>
+                        </div>
+                    </div>
+
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button> -->
+
+                </nav>
+            </div>
+        </div>
+    </div>
+    <!--  -->
+
+    <div style="margin-bottom: 0;" class=" lh-top">
+        <div class="container-lh" style="padding-top:10px"></div>
+        <a style="margin-left: 15px;" class="dn-top-text">Trang chủ</a>
+        <span style=" color:#a07936">/ Giới thiệu</span>
+    </div>
+    <main class="main_gt">
+        <!-- Banner -->
+        <div class="banner">
+            <img class="bg_banner" src="../assets/gioithieu/bg3.jpg" alt="" style="width: 100%;">
+            <div class="content_banner">
+                <p class="content_banner1">GOLDEN STAR JEWELRY - TALES OF HAPPINESS</p>
+                <p class="content_banner2">Lần đầu ra mắt thị trường vào năm 2015, Golden Star mong muốn mang tới những sản phẩm Nhẫn cưới & Trang sức vàng được đầu tư về thiết kế, minh bạch về thông tin giao dịch hàng hoá và mang đến khách hàng dịch vụ hậu mãi trọn vẹn.<br><br>Đến
+                    năm 2022, cùng với sự tái định vị thương hiệu, Golden Star thay đổi nhận diện và chiến lược kinh doanh. Vẫn giữ những giá trị cốt lõi về sản phẩm, Golden Star mong muốn mỗi món nhẫn cưới hay trang sức đều giúp khách hàng ghi dấu những
+                    khoảnh khắc, những câu chuyện hạnh phúc trong suốt cuộc đời.</p>
+            </div>
+        </div>
+        <!-- Content -->
+        <div class="main_content">
+            <div class="main_content1">
+                <div>
+                    <h2>THIẾT KẾ ĐỘC QUYỀN TỪ HÀN QUỐC</h2>
+                    <p>Lấy tầm nhìn trở thành “Nhà bán lẻ trang sức dẫn đầu xu hướng", trang sức Golden Star mang phong cách trẻ trung, hiện đại, liên tục cập nhật những xu hướng mới từ Hàn Quốc. Ba dòng sản phẩm chủ lực của Golden Star Jewelry gồm có: Nhẫn
+                        cưới, Trang sức cưới và Trang sức hiện đại cho nữ giới. Khách hàng sở hữu trang sức vàng từ Golden Star Jewelry đồng thời sở hữu xu hướng mới nhất đến từ thế giới, được thể hiện bằng sản phẩm mang tính sáng tạo, đột phá trong thiết
+                        kế và công nghệ chế tác.</p>
+                </div>
+                <img src="../assets/gioithieu/anh1.jpg" alt="">
+            </div>
+
+            <div class="main_content1">
+                <img src="../assets/gioithieu/anh2.jpg" alt="">
+                <div>
+                    <h2>NHỮNG CÂU CHUYỆN HẠNH PHÚC</h2>
+                    <p>Mang trong mình sứ mệnh sẽ trở thành bạn đồng hành luôn thấu hiểu và trân trọng từng khoảnh khắc trong cuộc sống của khách hàng, slogan của Golden Star Jewelry là “Tales of Happines” (Câu chuyện của hạnh phúc).</br>
+                        </br> Hạnh phúc, tình yêu, kỉ niệm,… được hình hóa thành trang sức vàng – nguyên liệu quý có giá trị không bao giờ mai một để trang sức không chỉ bền đẹp, mà luôn gợi nhắc mỗi người từng dấu mốc đáng nhớ đã trải.Chiếc lắc tay cô gái
+                        tự thưởng cho mình nhân dịp thăng chức sau thời gian nỗ lực trong công việc. Sợi dây chuyền bạn trai đích thân chọn mua tặng người yêu nhân kỉ niệm của hai người. Đôi bông tai con gái nhận tháng lương đầu tiên liền mua tặng mẹ.
+                        Cặp nhẫn cưới hai người yêu nhau cùng chọn cho một chương mới gắn kết vợ chồng. Chiếc nhẫn lưu từ bà, từ mẹ rồi được chuyển tặng cho con, cho cháu; để câu chuyện hạnh phúc được lưu giữ mãi với thời gian.</p>
+                </div>
+            </div>
+
+            <div class="main_content1">
+                <div>
+                    <h2>LỢI THẾ CẠNH TRANH TRONG SẢN XUẤT & CHẾ TÁC</h2>
+                    <p>Sở hữu xưởng sản xuất rộng hơn 3000m2 tại Hà Nội, dây chuyền sản xuất hiện đại cùng với kinh nghiệm hơn 30 năm trong ngành sản xuất kim hoàn, Golden Star tự hào được nhà nước bảo hộ cấp phép chế tác trang sức vàng. Golden Star cam
+                        kết mang đến khách hàng những sản phẩm chất lượng tốt nhất với mức giá dễ tiếp cận nhất, để trang sức vàng không còn là một món đồ xa xỉ, mà là món quà, món phụ kiện mà bất kì ai cũng có thể sở hữu hoặc trao tặng.</p>
+                </div>
+                <img src="../assets/gioithieu/anh3.jpeg" alt="">
+            </div>
+
+            <div class="main_content1">
+                <img src="../assets/gioithieu/anh4.jpg" alt="">
+                <div>
+                    <h2>DỊCH VỤ HẬU MÃI TẬN TÂM</h2>
+                    <p>Mỗi sản phẩm, giao dịch tại Golden Star đều cam kết minh bạch, đầy đủ hoá đơn cho toàn bộ giao dịch. Golden Star mang đến dịch vụ chăm sóc và hậu mãi trọn đời với những đặc quyền hấp dẫn để khách hàng có thể có trải nghiệm mua sắm
+                        trọn vẹn nhất.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+
+
+    <!-- footer -->
+    <footer class="footer-bg text-center text-lg-start">
+        <div class="top-footer">
+            <div class="top-footer-down">
+                <div class="footer-hotline">
+                    Hotline của chúng tôi luôn chào đón quý khách
+                </div>
+                <div class="footer-phone">
+                    <img src="../assets/icon/icon_ft_contact_cus.webp" /> 1800 595 995
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <img width="100px" height="70px" class="" src="../assets/icon/logo3.png" />
+
+                    <ul class="list-unstyled mt-2 mb-0">
+                        <li>
+                            <a href="#!" style="text-decoration: none;" class="text-dark">Gloden Star là một cửa hàng buôn bán đá quý uy tín, chất lượng hàng đầu tại Việt Nam</a>
+                        </li>
+                        <li class="flex mt-2">
+                            <i style="cursor: pointer;" class=" footer-icon fa-brands fa-google"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-facebook"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-twitter"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-youtube"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <h5 class="footer-color-h text-uppercase">Địa chỉ</h5>
+
+                    <ul class="list-unstyled mt-3 mb-0">
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-solid fa-location-pin"></i>
+                            <a href="#!" class="text-dark textdecoration"> Hung Vuong, Ninh Kieu, Can Tho</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class=" footer-icon-address fa-solid fa-phone"></i>
+                            <a href="#!" class="text-dark textdecoration  ">18001048</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-regular fa-envelope"></i>
+                            <a href="#!" class="text-dark textdecoration  ">goldenstar@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0 textdecoration">Về Golden Star</h5>
+
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Giới thiệu</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Cửa hàng </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Liên hệ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Tuyển dụng</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0">ĐĂNG KÝ NHẬN THÔNG BÁO & KHUYẾN MẠI TỪ Golden Star</h5>
+
+                    <p>Hãy trở thành người đầu tiên nắm được các thông tin cập nhật mới nhất từ Golden Star về các mẫu thiết kế mới, những event đặc biệt, tin khuyến mại và các chương trình tặng quà... từ Golden Star.</p>
+
+                    <div class="input-group">
+                        <input type="text" style="margin-right: 10px;" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
+                        </span>
+                    </div>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">Golden Star</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../back/index.js"></script>
+
+</body>
+
+</html>

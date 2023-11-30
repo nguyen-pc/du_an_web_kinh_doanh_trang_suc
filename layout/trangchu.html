@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="icon" type="image/x-icon" href="../assets/logo3.ico">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="../back/style.css">
+    <title>Trang chủ</title>
+</head>
+
+<body>
+    <!-- Header -->
+    <div class="bg">
+        <div class="container ">
+            <!-- Top header -->
+            <div class="top-nav">
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+                    <div class="container-fluid ">
+                        <ul class="nav">
+                            <li class="nav-item">
+
+                                <a class="nav-link active" aria-current="page" href="./gioithieu.html">
+                                    <img src="../assets/icon/icon_header_left_list_1.webp" /> Về Gloden Star
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./gioithieu.html">
+                                    <img src="../assets/icon/cuahang.webp" /> Cửa hàng
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="./giavang.html">
+                                    <img src="../assets/icon/giavang.webp" /> Giá vàng
+                                </a>
+                            </li>
+                            <li style="cursor: pointer;" class="nav-item">
+                                <a class="nav-link " href="./lienhe.html">
+                                    <img src="../assets/icon/lienhe.webp" /> Liên hệ
+                                </a>
+                            </li>
+                            <li class="nav-item">
+
+                                <a style="cursor: pointer;" class="nav-link" href="./tintuc.html">
+                                    <i style="color: #adadad;" class="fa-regular fa-lightbulb"></i> Tin tức
+                                </a>
+                            </li>
+                        </ul>
+
+                        <a href="./trangchu.html"> <img style="width: 150px; height: 70px; border-radius: 50%; " src="../assets/icon/logo3.png  " /></a>
+                        <form class="d-flex" role="search">
+                            <input id="Search" class="form-control me-2" type="search" placeholder="Tìm kiếm sản phẩm" aria-label="Search">
+                            <button id="btn_search" class="btn btn-outline-success" type="submit" onclick="sendSearch()">Search</button>
+                        </form>
+                        <a id="cart" class="hover1" style="cursor: pointer; color: inherit; text-decoration: none;" href="./giohang.html">
+                            <img src="../assets/icon/giohang.webp" /> Giỏ hàng
+                        </a>
+                        <a class="hover1" style="color: inherit; text-decoration: none;" href="./dangnhap.html">
+                            <i class="fa-solid fa-user"></i> Tài khoản
+                        </a>
+
+                        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+           </button>
+                    </div>
+                </nav>
+            </div>
+
+
+
+            <!-- down header -->
+            <div class="bottom-nav">
+
+
+                <nav class="navbar navbar-expand-lg bg-body-tertiary  ">
+
+                    <div class=" offcanvas offcanvas-end silde" tabindex="-1" id="navbarNavProduct" aria-labelledby="offcanvasRightLabel">
+                        <div class="navbar-nav">
+                            <a class="nav-link button1 text  " aria-current="page" href="./sanpham.html">TRANG SỨC NỮ</a>
+                            <a class="nav-link button1 button-color text " href="./sanpham.html">TRANG SỨC NAM</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">NHẪN CƯỚI</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">BẠC MỸ NGHỆ</a>
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC ĐÁ MÀU</a>
+
+                            <a class="nav-link button1 text" href="./sanpham.html">TRANG SỨC KIM CƯƠNG</a>
+                            <a style="color: #010101 !important; border-bottom: 1px solid #daa937;" class="nav-link button1 text" href="./khuyenmai.html">KHUYẾN MÃI</a>
+                        </div>
+                    </div>
+
+                    <!-- <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarNavProduct" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+              </button> -->
+
+                </nav>
+            </div>
+        </div>
+    </div>
+
+    <!-- Main  -->
+    <div>
+
+        <div class="">
+            <div id="carouselExample" class="carousel carousel-dark slide">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <img src="../assets/trangchu/ms_banner_img3.webp" class="d-block w-100" alt="background">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/trangchu/bg_1.webp" class="d-block w-100" alt="background">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="../assets/trangchu/ms_banner_img4.webp" class="d-block w-100" alt="background">
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+            </div>
+
+            <div style="margin-top: 60px;" class="container">
+                <div class="tc_title">SẢN PHẨM BÁN CHẠY TRONG TUẦN</div>
+                <!-- cards product -->
+                <div>
+                    <div id="carouselExampleControls" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner carousel-inner-product">
+                            <div class="carousel-item carousel-item-product active">
+                                <div class="card_wrapper">
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_1.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Lắc tay nữ NA426527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_2.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Lắc tay nữ NA426528</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_3.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426529</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_4.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426521</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-product active">
+                                <div class="card_wrapper">
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp-5.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_6.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426027</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_7.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426927</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/sp_8.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Khuyên tai NA426927</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                        <button class="carousel-control-next carousel-control-next-product" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+                    </div>
+                </div>
+                <!--  -->
+
+                <!--  -->
+                <div class="tc_banner">
+                    <img class="d-block w-100" width="100%" src="../assets/trangchu/banner_top_1.webp" />
+                    <div class="button_banner">
+                        <a class="button_product">XEM NGAY</a>
+                    </div>
+                </div>
+                <div class="tc_banner">
+                    <img class="d-block w-100" width="100%" src="../assets/trangchu/2banner_top_2.webp" />
+                    <div class="button_banner">
+                        <a class="button_product">XEM NGAY</a>
+                    </div>
+                </div>
+
+                <div style="display: flex;">
+                    <div class="tc_banner">
+                        <img class="d-block w-100" width="100%" src="../assets/trangchu/3banner_top_img-3.webp" />
+                        <div class="button_banner">
+                            <a class="button_product">BỘ SƯU TẬP</a>
+                        </div>
+                    </div>
+                    <div class="tc_banner">
+                        <img class="d-block w-100" width="100%" src="../assets/trangchu/4banner_top_img.webp" />
+                        <div class="button_banner">
+                            <a class="button_product">BỘ SƯU TẬP</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="tc_banner">
+                    <img class="d-block w-100" width="100%" src="../assets/trangchu/5banner_top_img.webp" />
+                    <div class="button_banner">
+                        <a class="button_product">XEM NGAY</a>
+                    </div>
+                </div>
+                <!--  -->
+                <div style="margin-top: 60px;" class="tc_title">SẢN PHẨM ĐƯỢC CÁC CẶP ĐÔI LỰA CHỌN</div>
+                <!-- card product-->
+                <div>
+                    <div id="carouselControlsProduct2" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                        <div class="carousel-inner carousel-inner-product">
+                            <div class="carousel-item carousel-item-product active">
+                                <div class="card_wrapper">
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_1.jpg" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4265627</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_2.jpg" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4266527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_3.jpg" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA5426527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_4.jpg" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4264527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="carousel-item carousel-item-product active">
+                                <div class="card_wrapper">
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_5.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4265237</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+
+
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_6.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4265227</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_7.jpg" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4226527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                    <div class="card">
+                                        <div class="img_wrapper"> <img src="../assets/trangchu/lc_8.webp" class="card-img-top img_product" alt="..."> </div>
+                                        <div class="card-body">
+                                            <p style="text-align: center;" class="card-text">Nhẫn cưới NA4261527</p>
+                                            <h5 style="text-align: center;" class="card-title">Liên hệ</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControlsProduct2" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+              </button>
+                        <button class="carousel-control-next carousel-control-next-product" type="button" data-bs-target="#carouselControlsProduct2" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+              </button>
+                    </div>
+                </div>
+                <!--  -->
+                <div style="margin-top: 60px;" class="tc_title">COLLECTION</div>
+                <!-- card product -->
+                <div style="margin-bottom: 100px;" id="carouselControlsProduct3" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner carousel-inner-product">
+                        <div class="carousel-item carousel-item-product active">
+                            <div class="card_wrapper ">
+                                <div class="card card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img1.png" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+
+                                <div s class="card height card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img2.webp" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="card card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img3.png" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="card height card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img4.webp" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item carousel-item-product ">
+                            <div class="card_wrapper ">
+
+                                <div class="card card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img5.png" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+
+
+                                <div class="card height card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img2.webp" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="card card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img1.png" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                                <div class="card height card_background ">
+                                    <div style="position: relative; " class="img_wrapper_collection play img_container">
+                                        <i class="i player_icon fa-solid fa-circle-play"></i>
+                                        <img src="../assets/trangchu/brand_img4.webp" class="img_product" alt="...">
+                                        <div class="overlay"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselControlsProduct3" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+                    <button class="carousel-control-next carousel-control-next-product" type="button" data-bs-target="#carouselControlsProduct3" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+                </div>
+
+            </div>
+        </div>
+
+        <!--  -->
+
+    </div>
+    <!-- footer -->
+
+    <footer class="footer-bg text-center text-lg-start">
+        <div class="top-footer">
+            <div class="top-footer-down">
+                <div class="footer-hotline">
+                    Hotline của chúng tôi luôn chào đón quý khách
+                </div>
+                <div class="footer-phone">
+                    <img src="../assets/icon/icon_ft_contact_cus.webp" /> 1800 595 995
+                </div>
+            </div>
+
+        </div>
+        <!-- Grid container -->
+        <div class="container p-4">
+            <div class="row">
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <img width="100px" height="70px" class="" src="../assets/icon/logo3.png" />
+
+                    <ul class="list-unstyled mt-2 mb-0">
+                        <li>
+                            <a href="#!" style="text-decoration: none;" class="text-dark">Gloden Star là một cửa hàng buôn bán đá quý uy tín, chất lượng hàng đầu tại Việt Nam</a>
+                        </li>
+                        <li class="flex mt-2">
+                            <i style="cursor: pointer;" class=" footer-icon fa-brands fa-google"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-facebook"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-twitter"></i>
+                            <i style="cursor: pointer;" class="footer-icon fa-brands fa-youtube"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <!--Grid column-->
+                <!--Grid column-->
+                <div class="col-lg-3 col-md-6 mb-4 mb-md-2">
+                    <h5 class="footer-color-h text-uppercase">Địa chỉ</h5>
+
+                    <ul class="list-unstyled mt-3 mb-0">
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-solid fa-location-pin"></i>
+                            <a href="#!" class="text-dark textdecoration"> Hung Vuong, Ninh Kieu, Can Tho</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class=" footer-icon-address fa-solid fa-phone"></i>
+                            <a href="#!" class="text-dark textdecoration  ">18001048</a>
+                        </li>
+                        <li class="flex mb-2">
+                            <i class="footer-icon-address fa-regular fa-envelope"></i>
+                            <a href="#!" class="text-dark textdecoration  ">goldenstar@gmail.com</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-2 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0 textdecoration">Về Golden Star</h5>
+
+                    <ul class="list-unstyled mt-3">
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Giới thiệu</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Cửa hàng </a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Liên hệ</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">Tuyển dụng</a>
+                        </li>
+                        <li class="mb-2">
+                            <a href="#!" class="hover1 text-dark textdecoration">FAQs</a>
+                        </li>
+                    </ul>
+                </div>
+                <!--Grid column-->
+
+                <!--Grid column-->
+                <div class="col-lg-4 col-md-6 mb-4 mb-md-0">
+                    <h5 class="footer-color-h text-uppercase mb-0">ĐĂNG KÝ NHẬN THÔNG BÁO & KHUYẾN MẠI TỪ Golden Star</h5>
+
+                    <p>Hãy trở thành người đầu tiên nắm được các thông tin cập nhật mới nhất từ Golden Star về các mẫu thiết kế mới, những event đặc biệt, tin khuyến mại và các chương trình tặng quà... từ Golden Star.</p>
+
+                    <div class="input-group">
+                        <input type="text" style="margin-right: 10px;" class="form-control" placeholder="Nhập địa chỉ Email của bạn">
+                        <span class="input-group-btn">
+                  <button class="btn btn-default" type="button"><span class="glyphicon glyphicon-envelope">Đăng ký</span></button>
+                        </span>
+                    </div>
+                </div>
+                <!--Grid column-->
+            </div>
+            <!--Grid row-->
+        </div>
+        <!-- Grid container -->
+
+        <!-- Copyright -->
+        <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+            © 2023 Copyright:
+            <a class="text-dark" href="#">Golden Star</a>
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="../back/index.js"></script>
+
+</body>
+
+</html>
